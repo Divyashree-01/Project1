@@ -1,2 +1,2 @@
-# Project1
-Simple Calculator 
+# Simple calculator 
+Simple Calculator using HTML, CSS and JavaScript 
