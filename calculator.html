@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+       form{
+           border:2px solid black;
+           width:500px;
+       }
+       #heading{
+           padding:10px;
+           background-color: black;
+           color: white;
+           margin-bottom:0px;
+           width:100%;
+           border:2px solid black;
+       }
+    </style>
+</head>
+<body>
+    
+    <div id="myDiv" style="text-align:center;margin: auto;width: 50%;">
+     <h1 id="heading">CALCULATOR</h1>
+    <form name="frmAdd">
+        <table cellpadding="5">
+            <tr>
+                <td>Enter first no:</td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td>Enter second no:</td>
+                <td><input type="text" name="b"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="btnAdd" value="+">
+ <script >
+     var btn=document.frmAdd.btnAdd;
+     btn.onclick=function(){
+       var m=document.getElementById("a").value;
+       var n=document.frmAdd.b.value;
+       document.getElementById("c"). value=Number(m)+Number(n);
+       
+     }
+ </script>        
+                </td>
+<td><input type="button" name="btnSub" value="-">
+ <script >
+     var btn=document.frmAdd.btnSub;
+     btn.onclick=function(){
+       var m=document.getElementById("a").value;
+       var n=document.frmAdd.b.value;
+       document.getElementById("c"). value=Number(m)-Number(n);
+       
+     }
+     </script>
+    
+</td>
+<td><input type="button" name="btnMulti" value="*">
+ <script >
+     var btn=document.frmAdd.btnMulti;
+     btn.onclick=function(){
+       var m=document.getElementById("a").value;
+       var n=document.frmAdd.b.value;
+       document.getElementById("c"). value=Number(m)*Number(n);
+       
+     }
+     </script>
+   
+</td>              
+<td><input type="button" name="btnDiv" value="/">
+ <script >
+     var btn=document.frmAdd.btnDiv;
+     btn.onclick=function(){
+       var m=document.getElementById("a").value;
+       var n=document.frmAdd.b.value;
+       document.getElementById("c"). value=Number(m)/Number(n);
+       
+     }
+     </script>
+    
+</td>
+ <td><input type="button" name="btnRem" value="%">
+ <script >
+     var btn=document.frmAdd.btnRem;
+     btn.onclick=function(){
+       var m=document.getElementById("a").value;
+       var n=document.frmAdd.b.value;
+       document.getElementById("c"). value=Number(m)%Number(n);
+       
+     }
+     </script>
+     
+ </td>     
+ <td><input type="reset" value="RESET"></td>
+                
+            </tr>
+   <tr>
+       <td>Output:</td>
+       <td><input type="text" id="c"></td>
+   </tr>
+   
+        </table>
+    </form></div>
+    
+</body>
+</html>
