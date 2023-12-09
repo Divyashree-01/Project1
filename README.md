@@ -19,7 +19,7 @@ A simple web-based calculator built using HTML, CSS, and JavaScript. This projec
 
 ## Demo
 
-
+![Calculator Screenshot](Screenshot_2023-12-09-09-21-34-78_e28a3578e21df294109c9d5e8b6fe6fc.jpg)
 ---
 
 Happy calculating! 🧮✨
